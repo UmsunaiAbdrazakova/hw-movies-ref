@@ -1,19 +1,21 @@
 import React, { useState } from "react";
-import "./App.css";
 import Headers from "./components/Header";
 import MainContent from "./components/MainContent";
 
 const App = () => {
   const [movies, setMovies] = useState([]);
+  const [modalActive, setModalActive] = useState(false);
 
   const addMovie = (newMovie) => {
     setMovies((prevMovies) => [...prevMovies, newMovie]);
   };
 
+  const changeButtonTitle = () => {};
+
   return (
     <div className="App">
-      <Headers onAddMovie={addMovie} />
-      <MainContent movies={movies} />
+      <Headers modalActive={setModalActive} changeButtonTitle={changeButtonTitle} />
+      <MainContent movies={movies} modalActive={modalActive} setModalActive={setModalActive}/>
     </div>
   );
 };

@@ -1,11 +1,20 @@
 import React from "react";
+import styled from "styled-components";
 
 const Button = ({ color, title, onClick }) => {
   return (
-    <button style={{ backgroundColor: color }} onClick={onClick}>
+    <StyledButton style={{ backgroundColor: color }} onClick={onClick}>
       {title}
-    </button>
+    </StyledButton>
   );
 };
 
+const StyledButton = styled.button`
+  background-color: orange;
+  color: white;
+  border-radius: 15px;
+  width: 100px;
+  height: 25px;
+  border: none;
+`;
 export default Button;
