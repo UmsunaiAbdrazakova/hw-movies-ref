@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/hw-movies-ref/static/css/main.5e41044a.css",
+    "main.js": "/hw-movies-ref/static/js/main.454ab0b2.js",
+    "index.html": "/hw-movies-ref/index.html",
+    "main.5e41044a.css.map": "/hw-movies-ref/static/css/main.5e41044a.css.map",
+    "main.454ab0b2.js.map": "/hw-movies-ref/static/js/main.454ab0b2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5e41044a.css",
+    "static/js/main.454ab0b2.js"
+  ]
+}
